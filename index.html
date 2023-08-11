@@ -1,0 +1,736 @@
+
+
+
+
+<html>
+    <meta name="viewport" content="width=device-width" charset="UTF-8"/>
+    <title>Dean Academic | MNNIT Allahabad</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/layout.css" />
+    <link rel="stylesheet" href="/static/css/profile.css" />
+    <link rel="stylesheet" href="/static/css/login-register.css" />
+    <link rel="stylesheet" href="/static/fonts/Roboto/roboto.css" />
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script type="text/javascript" src="/static/js/login-register.js"></script>
+    
+    <script type="text/javascript" src="/static/js/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="/static/css/sweetalert.css" />
+    
+    
+    
+    
+    <body>
+    <div class="header_custom">
+        <div class="logo">
+            <a href="#" title="">
+                <img src="/static/img/MNNIT-2.png" class="logo-img" alt="photo not found" />
+            </a>
+        </div>
+        <p align="center" class="banner_custom">
+            <img src="/static/img/MNNIT.png" class="banner-logo" />
+        <div class="banner-text">
+            MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY ALLAHABAD <br>
+            <span class="small">Office of The Dean (Academic) |<font size="2px" color="#471923"> Email: academics@mnnit.ac.in</font></span>
+        </div>
+        </p>
+        <div class="navbar_custom">
+            <span class="icon-bars-button" id="show_left_menu_2">
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+            </span>
+            <span class="icon-bars-button dpdown-menu">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </span>
+            <ul class="navlist_custom xtreme-small">
+    
+                
+                    <li class="navel" href="javascript:void(0)" onclick="openLoginModal();">Login</li>
+                
+                    <li class="navel has-menu">
+                        Important Links<span class="glyphicon glyphicon-menu-down pull-right"></span>
+                        <ul class="menu">
+                        <li class="menu-item" data-toggle="modal"><a class="homenav" href="../certificates" target="_blank">Certificate Portal</a></li>
+                        <li class="menu-item" data-toggle="modal">
+                            <a class="homenav" href="http://172.31.57.57:8080/jspui/" target="_blank">Institutional Repository</a>
+                        </li>
+                        <li class="menu-item" data-toggle="modal" data-target="#instruct"  >Instructions</li>
+                        <li class="menu-item" data-toggle="modal">
+                            <a class="homenav" href="http://www.mnnit.ac.in/index.php/admission" target="_blank">Admission Portals</a>
+                        </li>
+                        <li class="menu-item" ><a target="_blank" href="https://academics.mnnit.ac.in/old.php" style="color: white;">Old Website</a></li>
+                         <!-- <li class="menu-item" data-toggle="modal">
+                            <a class="homenav" href="https://academics.mnnit.ac.in/data/BTech1stYear2021-22.pdf" target="_blank">B.TECH 1st Year Academic Calendar 2021-22</a>
+                        </li> -->
+                         <!-- <li class="menu-item" data-toggle="modal">
+                            <a class="homenav" href="https://academics.mnnit.ac.in/data/BTech&MCA2ndYear2021-22.pdf" target="_blank">B.TECH & MCA 2nd YEAR ACADEMIC CALENDAR 2021-22</a>
+                        </li> -->
+    
+                    </ul>
+                </li>
+    
+                <li class="navel has-menu">
+                    Fee Structure  <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <ul class="menu">
+                        <li class="menu-item" data-toggle="modal" data-target="#old_fee_struct">
+                            For Students (Before 2015-2016)
+                        </li>
+                        <li class="menu-item" data-toggle="modal" data-target="#mid_fee_struct">
+                            For Students (2018-2019)
+                        </li>
+                        <li class="menu-item" data-toggle="modal" data-target="#newer_fee_struct">
+                            For Students (2019-2020) Onwards
+                        </li>
+                    </ul>
+                </li>
+    
+                <!-- <li class="navel" ><a target="_blank" href="https://academics.mnnit.ac.in/old.php" style="color: white;">Notice Board</a></li> -->
+                <li class="navel" data-toggle="modal" data-target="#dwnld">Downloads</li>
+                <li class="navel" data-toggle="modal" data-target="#acad_cal" >Academic Calendar</li>
+                <li class="navel"><a class="homenav" href="/new/">Home</a></li>
+                <li class="navel nav-last" id="show_left_menu_1" ><span class="glyphicon glyphicon-arrow-right" ></span></li>
+            </ul>
+        </div>
+        <!---------- Modal for Downloads ------------>
+        <div id="dwnld" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Downloads</h4>
+                    </div>
+                    <div class="modal-body">
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/2189.pdf'">Guidelines for getting the correct degree certificate.</button>
+    
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/1st_yr_curriculum.pdf'">first year curriculum</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/phd_performa.pdf'">performa for ph.d. registration</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/hostelform.pdf'">hostel allotment form</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/daysch_reg_o_13.pdf'">notice for day scholars</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/antiraggingen.pdf'">ugc regulations on curbing the menace of ragging in higher educational institutions, 2009 (english version)</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/antiragginghin.pdf'">ugc regulations on curbing the menace of ragging in higher educational institutions, 2009 (hindi version)</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/affidavit_parent-old.doc'">affidavit by parent/guardian</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/affidavit_student_old.doc'">affidavit by student</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/vehicle.pdf'">affidavit for vehicles</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/alcohol.pdf'">affidavit for prohibited items</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/Student_Application_Form.pdf'">Student Application form's format</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/CPI_to_Percentage_Conversion_Certificate.pdf'">CPI to Percentage Conversion Certificate</button>
+                        <button class="btn btn-default fwidth" onclick="window.location.href='../data/No_Dues_form_for_UG_PG.pdf'">No Dues form for UG/ PG</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+            <!----------Donwloads Modal over---------------------->
+    
+        <!---------- Modal for Old Fee Structure ------------>
+        <div id="old_fee_struct" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Fee Structure for students admitted before or during session 2015-16</h4>
+                    </div>
+                    <div class="modal-body">
+                        <object width="100%" type="application/pdf" data="../DDR_ACAD_Consolidated_Fee_Structures.pdf?val=fee_struct" id="pdf_content"></object>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-----------Old Fee Structure Over------------>
+    
+        <div id="mid_fee_struct" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Fee Structure for students (2018-2019)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <object width="100%" type="application/pdf" data="../NFS_2018-19.pdf" id="pdf_content"></object>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!---------- New Fee Structure ------------>
+        <div id="new_fee_struct" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Fee Structure for students (2019-2020)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <object width="100%" type="application/pdf" data="http://mnnit.ac.in/images/stories/499_Notification_for_revised_tution_fee_2.pdf?val=fee_struct" id="pdf_content"></object>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-----------New Fee Structure------------>
+    
+        <!---------- Newer Fee Structure ------------>
+        <div id="newer_fee_struct" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Fee Structure for students admitted during session 2019-2017 &amp; onwards</h4>
+                    </div>
+                    <div class="modal-body">
+                        <object width="100%" type="application/pdf" data="../DR_ACAD_Consolidated_Fee_Structures.pdf?val=fee_struct" ></object>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-----------Newer Fee Struct Modal Over------------>
+    
+        <!---------- Modal for academics calander ------------>
+        <div id="acad_cal" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Academic Calendar</h4>
+                    </div>
+                    <div class="modal-body">
+                        <object width="100%" type="application/pdf" data="../data/acadcal_2022_23_02-12-2022.pdf"></object>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-----------Academics Calander Modal Over------------>
+    
+    
+        <!---------- Modal for Instructions ------------>
+        <div id="instruct" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Instructions for Students</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="panel-group" id="instruct-accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#instruct-accordion" href="#ins-collapse-1">
+                                    <h4 class="panel-title">
+                                        <a>Payment of Fees<span class="glyphicon glyphicon-plus pull-right"></span></a>
+                                    </h4>
+                                </div>
+                                <div id="ins-collapse-1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        The institute fee can be paid through following schemes.
+                                        <ol>
+                                            <li>
+                                                <strong><u>By Draft: </u></strong> This scheme is only for:
+                                                <ol type="i">
+                                                    <li>
+                                                        Students availing educational loans.
+                                                    </li>
+                                                    <li>
+                                                        Students receiving scholarships.<br>
+                                                        <div class="well"><span class="text-info"><strong><u>All drafts must be made in favour of MNNIT Fee Account A/C No: <mark>30981350206</mark>  payabale at ALLAHABAD</u></strong></span>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <strong><u>By SBI-MOPS Scheme: </u></strong> This facility can be used to deposit Institute fee by following methods :
+                                                <ol type="i">
+                                                    <li>
+                                                        Net Banking of any bank.
+                                                    </li>
+                                                    <li>
+                                                        Credit/Debit card of any bank.
+                                                    </li>
+                                                    <li>
+                                                        Offline at Sbi Branch (through challan generated by SBI MOPS).
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#instruct-accordion" href="#ins-collapse-2">
+                                    <h4 class="panel-title">
+                                        <a>Steps for Onine Registration<span class="glyphicon glyphicon-plus pull-right"></span></a>
+                                    </h4>
+                                </div>
+                                <div id="ins-collapse-2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>
+                                                Login to the portal using your registration number and password as entered by you during the registration process of last semester.You will be directed to your profile. Please see that your personal data is correct and upto date. If you find any discrepancy in the non editable fields contact to Dean Academics Office with proper proof.
+                                            </li>
+                                            <li>
+                                                Click the Registeration button on right side of your home page. You will be redirected to registration portal where you have to perform the following steps in order to complete your online registration.
+                                            </li>
+                                            <li>
+                                                The tab marked "Update Information" will now be activated. Fill in the details asked on the portal and submit the form.
+                                            </li>
+                                            <li>
+                                                Now the Portal's "Select Slot" tab will be activated. Select a slot according to your convenience (Please refer to the link Registration Slots for information about all the slots). If slot is not available, contact the webteam immediately.
+                                            </li>
+                                            <li>
+                                                The Button marked "Pay Fees" will now be activated. Select the mode of payment [Draft/Online]. If you select payment by SBI-MOPS, you will be redirected to the payment gateway of SBI.
+                                            </li>
+                                            <li>
+                                                If you had selected Draft option in step 5 above, enter detail of draft you had made for semester fee.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#instruct-accordion" href="#ins-collapse-3">
+                                    <h4 class="panel-title">
+                                        <a>Steps for DASA Candidates<span class="glyphicon glyphicon-plus pull-right"></span></a>
+                                    </h4>
+                                </div>
+                                <div id="ins-collapse-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>
+                                                If you have submitted DASA fees through SWIFT MESSAGE, report to Dean Office with receipt of the payment for confirmation of the payment.
+                                            </li>
+                                            <li>
+                                                If you have submitted DASA fees through Draft, deposit the DD in Accounts Section, get receipt and report to Dean [Academic] office.
+                                            </li>
+                                            <li>
+                                                Report respective departments for physical registration in your alloted slots.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#instruct-accordion" href="#ins-collapse-4">
+                                    <h4 class="panel-title">
+                                        <a>Steps for Physical Registration<span class="glyphicon glyphicon-plus pull-right"></span></a>
+                                    </h4>
+                                </div>
+                                <div id="ins-collapse-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ol>
+                                            <li>
+                                                Report at the GS rooms and submit the mess fees.
+                                            </li>
+                                            <li>
+                                                Report for physical registration in your allotted slot in your respective departments.
+                                            </li>
+                                        </ol>
+                                        <div class="well">
+                                            <strong>
+                                                <ul>
+                                                    <li>
+                                                        Students are advised to reach the venue one hour prior to the starting time of their slot so as to complete all the formalities beforehand.
+                                                    </li>
+                                                    <li>
+                                                        You must be present in Person during On-Campus Registration.
+                                                    </li>
+                                                    <li>
+                                                        <mark>Proxy Registration is not allowed under any circumstances.</mark>
+                                                    </li>
+                                                    <li>
+                                                        For any queries at any stage please mail to <a href="mailto:academics@mnnit.ac.in">academics@mnnit.ac.in</a>
+                                                    </li>
+                                                </ul>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-----------Instructions Modal Over------------>
+        
+        <!----------- LOGIN MODAL ------------------------>
+            <div class="modal fade login" id="loginModal" style="margin-top:10vw;">
+                  <div class="modal-dialog login animated">
+                      <div class="modal-content">
+                         <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:black">&times;</button>
+                            <h4 class="modal-title">Login<span class="glyphicon glyphicon-cross pull-right"></span></h4>
+                        </div>
+                        <div class="modal-body">  
+                            <div class="box">
+                                 <div class="content">
+                                    <div class="error"></div>
+                                    <div class="form loginBox">
+                                        <form method="post" action="" accept-charset="UTF-8"> <input type='hidden' name='csrfmiddlewaretoken' value='1TbMB2lKBxS0S8T9MqTGXU2owhwbGAVfF89WztIYaBcA9pKqFLEJO3VKLYOE40Ov' />
+                                        
+    
+    <div id="div_id_regno" class="form-group"> <label for="id_regno" class="control-label  requiredField">
+                    Registration No.<span class="asteriskField">*</span> </label> <div class="controls "> <input class="textinput textInput form-control" id="id_regno" maxlength="10" name="regno" type="text" required /> </div> </div> <div id="div_id_password" class="form-group"> <label for="id_password" class="control-label  requiredField">
+                    Password<span class="asteriskField">*</span> </label> <div class="controls "> <input class="textinput textInput form-control" id="id_password" name="password" type="password" required /> </div> </div>
+    
+                                        <input class="btn btn-default btn-login" type="submit" value="Login" name="login">
+                                        </form>
+                                 </div>
+                                     <!--added by jugtaram -->
+                                     <div id="forgetpasswd">
+                                         <a href="https://www.academics.mnnit.ac.in/password_reset.php">Reset Password</a>
+                                     </div>
+                            </div>
+                            
+                        </div>
+    
+                  </div>
+              </div>
+                  </div>
+                </div>
+        <!----------- LOGIN MODAL ------------------------>
+        
+         <!---------- Modal for Feedback ------------>
+        <div id="feedback" class="modal fade" role="dialog">
+            <div class="modal-admin modal-lg custom_modal" >
+    
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">Feedback</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form name="feed" method="post" action="submit_feedback" class="form">
+                            <div class="form-group">
+                                <label for="email">Title:</label>
+                                <input type="text" class="form-control" name="title" placeholder="What is it about...">
+                              </div>
+                              <div class="form-group">
+                                <label for="pwd">Description:</label>
+                                <textarea name="desc" class="form-control"  placeholder="Describe your problem." ></textarea>
+                              </div>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!----------Feedback Modal over---------------------->
+    </div>
+    
+    
+    
+    
+    
+        
+        
+        
+    
+        <!-- jumbotron-->
+    <div class="jumbo">
+    
+    </div>
+    <!-- jumbotron ends  -->
+    
+    <div class="container-fluid" style="padding-top:0">
+        <div class="row main-row">
+            <div class="col-md-4 notification-container">
+                <div class="col-md-12">
+                    <h3>NOTIFICATIONS</h3>
+                    <hr class="header-hr">
+    
+                    
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2590">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Notice for the students who have not yet registered (Online as well as Physically) for Even Semester of Academic Session 2022-23</div><div class="col-md-4" style="color:#b22d00">30/01/23<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2590" class="panel-collapse collapse">
+                                <div class="panel-body"><br><br>Click <a href=/data/2590.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2587">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Notice regarding Physical registration of Even Semester of Session 2022-23</div><div class="col-md-4" style="color:#b22d00">20/01/23<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2587" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2587.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2584">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">NOTICE FOR GRADE DISCREPANCY OF END ODD SEMESTER 2022-23</div><div class="col-md-4" style="color:#b22d00">18/01/23<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2584" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2583.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2581">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">NON DECLARATION OF RESULT OF MESS  FEES DUES</div><div class="col-md-4" style="color:#b22d00">13/01/23<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2581" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2581.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2573">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Regarding Physical Registration of Even Semester of Academic Session 2022-23</div><div class="col-md-4" style="color:#b22d00">12/01/23<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2573" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2573.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2572">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">B.Tech 8th semester registered studnts list (department wise)</div><div class="col-md-4" style="color:#b22d00">10/01/23<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2572" class="panel-collapse collapse">
+                                <div class="panel-body">B.Tech 8th semester registered studnts list (department wise)<br><br>Click <a href=/data/2572.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2560">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Open Elective Allotment Result for B.Tech. 8th Semester </div><div class="col-md-4" style="color:#b22d00">20/12/22<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2560" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2560.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2553">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Notification for B.Tech. 8th Semester academic engagement </div><div class="col-md-4" style="color:#b22d00">15/12/22<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2553" class="panel-collapse collapse">
+                                <div class="panel-body"><br><br>Click <a href=/data/2553.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2551">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Notification Regarding Late Registration</div><div class="col-md-4" style="color:#b22d00">14/12/22<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2551" class="panel-collapse collapse">
+                                <div class="panel-body"><br><br>Click <a href=/data/2551.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2506">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Roll list of 1st-year students, 2022 Batch</div><div class="col-md-4" style="color:#b22d00">18/11/22<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2506" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2506.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2505">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">B.Tech. First Year Course Structure and Curriculum (As per NEP-2020 Guidelines)</div><div class="col-md-4" style="color:#b22d00">16/11/22<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2505" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2505.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2446">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Revised Final Year DUES list who have dues in different Section</div><div class="col-md-4" style="color:#b22d00">24-Aug.-2022<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2446" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2445.pdf>here</a> to download notice.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-2093">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Tuition fee waiver to the student of SC/ST/PwD category of M.Tech. Programme</div><div class="col-md-4" style="color:#b22d00">09-Sep.-2020<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-2093" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/2091.pdf>here</a> to view.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-622">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Notice for SWIFT/NEFT/IMPS transfer for fee payment.</div><div class="col-md-4" style="color:#b22d00">26-Dec.-2018<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-622" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href=/data/Details_for_SWIFT_transfern.pdf>here</a> to view.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    <div class="panel-group" id="notification-accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#notification-accordion" href="#notif-collapse-67">
+                                <h4 class="panel-title">
+                                    <div class="row"><a><div class="col-md-8" style="color:#333">Student Application & No-Dues Form</div><div class="col-md-4" style="color:#b22d00">01-Oct.-2022<span class="glyphicon glyphicon-plus pull-right"></span></div></a></div>
+                                </h4>
+                            </div>
+                            <div id="notif-collapse-67" class="panel-collapse collapse">
+                                <div class="panel-body">Click <a href="../data/DAA_Student_Application_Form.pdf">here</a> to download Student Application Format.<br><br>
+    Click <a href="../data/No_Dues.pdf">here</a> to download No-Dues Form.</div>
+                            </div>
+                        </div>
+    
+                    </div>
+                  
+                    
+                    
+                </div>
+            </div>
+            <!--<div style="color:red;font-size:20px">-->
+                <!--Transcripts of students who had appeared for Supplementary Exam 2018 are being updated.Students are requested to be patient.-->
+            <!--</div>-->
+            <div class="col-md-8 main-container">
+                <div class="col-md-12">
+                    <h3>ABOUT MNNIT</h3>
+                    <hr class="header-hr">
+                    <div class="introduction">
+                        <p class="first">
+                            Motilal Nehru National Institute Of Technology, Allahabad was formerly Motilal Nehru Regional Engineering College, Allahabad . It is an institute with total commitment to quality and excellence in academic pursuits, is among one of the leading institutes in INDIA and was established in year 1961 as a joint enterprise of Govt. of India and Govt. of U.P. in accordance with the scheme of establishment of REC. However with effect from June 26th of 2002 the college became deemed university and is now known as Motilal Nehru National Institute of technology.</p>
+                        <p>
+                            The foundation stone of the college was laid by the first Prime Minister of India, Pt. Jawahar Lal Nehru on the 3rd of may, 1961 on a site spreading over 222 acres on the banks of the river Ganga. The main building of college was inaugurated by another illustrious son of India, Prime Minister Sri Lal Bahadur Shastri on 18th of April, 1965.</p>
+                        <p>
+                            The students are extensively exposed to cross-cultural environment as candidates from various other countries such as Sri Lanka, Nepal, Bangladesh, Bhutan, Mauritius, Malaysia, Iran, Yemen, Iraq, Palestine and Thailand also join MNNIT for various undergraduate and post-graduate programs.</p>
+                        <p>
+                            MNNIT is fully residential institution with eight hostels for boys and two for girls.
+                        </p>
+                        <hr>
+                        <p>
+                            <font size="4px"><strong>Note:</strong> For help in any regard, the office of Dean (Academics) can be reached on e-mail: <a href="mailto:academics@mnnit.ac.in">academics@mnnit.ac.in</a><br>In case of any grievance, please contact <a href="mailto:deanacademic@mnnit.ac.in">deanacademic@mnnit.ac.in</a></font>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    
+    
+    
+    
+    
+    <footer class="well" style="margin:0px; padding:10px;margin-top:12px;background:#152648;border:none;border-radius: 0" >
+             <p class="small" style="margin-bottom:0px;color:white;font-family: 'Roboto Condensed', sans-serif;" align="center"id="foot">&copy; <a href="https://academics.mnnit.ac.in/webt14.html"> Webteam</a>, Dean Academics<br />
+                    MNNIT Allahabad.<br />
+                    This is a &beta; version and is under devleopment.
+    
+    </p>
+    </footer>
+    
+    </body>
+    
+    
+    
